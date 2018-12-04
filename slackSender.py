@@ -1,9 +1,11 @@
 import requests
 import sys
 
-url = "https://hooks.slack.com/services/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"
+#url = "https://hooks.slack.com/services/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"
+url = sys.argv[1]
+message = sys.argv[2]
 
-payload = "{\r\n    \"text\": \sys.argv[1]\r\n}"
+payload = "{\r\n    \"text\": \""+message+"\"\r\n}"
 headers = {
     'Content-Type': "application/json",
     'cache-control': "no-cache",
