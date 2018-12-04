@@ -1,4 +1,6 @@
 from flask import Flask
+from flash import request
+import requests
 
 app = Flask(__name__)
 
