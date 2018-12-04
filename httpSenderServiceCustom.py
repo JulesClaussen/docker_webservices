@@ -17,7 +17,7 @@ def hello():
 			'cache-control': "no-cache",
 			'Postman-Token': "f7f5d4a0-8b39-4283-9806-67f233e54468"
 		}
-		response = requests.request("POST", url, data=payload, headers=headers)
+		reponse = requests.request("POST", url, data=payload, headers=headers)
 		return reponse.text
 	else:
 		return 'Hello World : GET REQUEST'
