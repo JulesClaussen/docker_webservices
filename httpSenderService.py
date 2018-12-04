@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def hello():
-	if requests.method == 'POST':
+	if request.method == 'POST':
 		content = request.json
 		return str(content)
 	else:
